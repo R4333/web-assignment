@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Job Application Form</h2>
+      <form id="applicationForm">
+        <!-- Personal Information Section -->
+        <div class="mb-3">
+          <label for="firstName" class="form-label">First Name:</label>
+          <input type="text" class="form-control" id="firstName" required />
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Last Name:</label>
+          <input type="text" class="form-control" id="lastName" required />
+        </div>
+        <!-- Additional fields as per requirements -->
+        <!-- BEGIN: Additional Fields -->
+        <!-- Contact Information Section -->
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Phone Number:</label>
+          <input type="tel" class="form-control" id="phoneNumber" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address:</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <!-- Address Section -->
+        <div class="mb-3">
+          <label for="street" class="form-label">Street:</label>
+          <input type="text" class="form-control" id="street" required />
+        </div>
+        <div class="mb-3">
+          <label for="city" class="form-label">City:</label>
+          <input type="text" class="form-control" id="city" required />
+        </div>
+        <div class="mb-3">
+          <label for="state" class="form-label">State:</label>
+          <input type="text" class="form-control" id="state" required />
+        </div>
+        <div class="mb-3">
+          <label for="zip" class="form-label">ZIP Code:</label>
+          <input type="text" class="form-control" id="zip" required />
+        </div>
+        <!-- Resume and Cover Letter Section -->
+        <div class="mb-3">
+          <label for="resume" class="form-label">Upload Resume:</label>
+          <input type="file" class="form-control" id="resume" required />
+        </div>
+        <div class="mb-3">
+          <label for="coverLetter" class="form-label">Cover Letter:</label>
+          <textarea
+            class="form-control"
+            id="coverLetter"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <!-- Education Section -->
+        <div class="mb-3">
+          <label for="education" class="form-label"
+            >Highest Level of Education Attained:</label
+          >
+          <input type="text" class="form-control" id="education" required />
+        </div>
+        <div class="mb-3">
+          <label for="school" class="form-label"
+            >Name of School/University:</label
+          >
+          <input type="text" class="form-control" id="school" required />
+        </div>
+        <div class="mb-3">
+          <label for="major" class="form-label">Major/Area of Study:</label>
+          <input type="text" class="form-control" id="major" required />
+        </div>
+        <div class="mb-3">
+          <label for="graduationYear" class="form-label"
+            >Graduation Year:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="graduationYear"
+            required
+          />
+        </div>
+        <!-- Employment History Section -->
+        <div class="mb-3">
+          <label for="previousJob" class="form-label"
+            >Previous Job Titles:</label
+          >
+          <input type="text" class="form-control" id="previousJob" required />
+        </div>
+        <div class="mb-3">
+          <label for="companyNames" class="form-label">Company Names:</label>
+          <input type="text" class="form-control" id="companyNames" required />
+        </div>
+        <div class="mb-3">
+          <label for="employmentDates" class="form-label"
+            >Employment Dates:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="employmentDates"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="jobResponsibilities" class="form-label"
+            >Job Responsibilities:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="jobResponsibilities"
+            required
+          />
+        </div>
+        <!-- Skills Section -->
+        <div class="mb-3">
+          <label for="skills" class="form-label">Relevant Skills:</label>
+          <input type="text" class="form-control" id="skills" required />
+        </div>
+        <div class="mb-3">
+          <label for="certifications" class="form-label">Certifications:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="certifications"
+            required
+          />
+        </div>
+        <!-- Availability Section -->
+        <div class="mb-3">
+          <label for="startDate" class="form-label">Start Date:</label>
+          <input type="date" class="form-control" id="startDate" required />
+        </div>
+        <div class="mb-3">
+          <label for="workSchedule" class="form-label"
+            >Preferred Work Schedule:</label
+          >
+          <input type="text" class="form-control" id="workSchedule" required />
+        </div>
+        <div class="mb-3">
+          <label for="relocate" class="form-label"
+            >Willingness to Relocate:</label
+          >
+          <input type="checkbox" class="form-check-input" id="relocate" />
+        </div>
+        <!-- References Section -->
+        <div class="mb-3">
+          <label for="referenceName" class="form-label">Reference Name:</label>
+          <input type="text" class="form-control" id="referenceName" required />
+        </div>
+        <div class="mb-3">
+          <label for="referenceContact" class="form-label"
+            >Reference Contact Information:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="referenceContact"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="relationship" class="form-label"
+            >Relationship to Applicant:</label
+          >
+          <input type="text" class="form-control" id="relationship" required />
+        </div>
+        <!-- Additional Questions Section -->
+        <div class="mb-3">
+          <label for="reason" class="form-label"
+            >Why do you want to work for this company?</label
+          >
+          <textarea
+            class="form-control"
+            id="reason"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <!-- Consent and Agreement Section -->
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="terms" required />
+          <label class="form-check-label" for="terms"
+            >I agree to the terms and conditions</label
+          >
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="privacy"
+            required
+          />
+          <label class="form-check-label" for="privacy"
+            >I acknowledge the privacy policy</label
+          >
+        </div>
+        <!-- END: Additional Fields -->
+        <button type="button" class="btn btn-primary" id="submitForm">
+          Submit Application
+        </button>
+      </form>
+
+      <button type="button" class="btn btn-info mt-3" id="viewTable">
+        View Applications as Table
+      </button>
+
+      <div id="applicationsTable" class="mt-3" style="display: none"></div>
+    </div>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script>
+      let applications = []; // Array to store application data
+
+      function validateForm() {
+        // Example validation (you can add more complex validation as needed)
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        if (!firstName || !lastName) {
+          alert("Please fill in all required fields.");
+          return;
+        }
+
+        // Store application data
+        const applicationData = {
+          firstName,
+          lastName,
+          // Capture other form fields similarly
+        };
+        applications.push(applicationData);
+        alert("Application submitted successfully.");
+        console.log(applications); // For demonstration
+      }
+
+      function showTable() {
+        if (applications.length === 0) {
+          alert("No applications submitted yet.");
+          return;
+        }
+
+        const applicationsTable = document.getElementById("applicationsTable");
+        applicationsTable.style.display = "block"; // Make the table visible
+
+        // Dynamically generate table from applications array
+        let tableHtml = `<table class="table">
+                                                <thead>
+                                                        <tr>
+                                                                <th>First Name</th>
+                                                                <th>Last Name</th>
+                                                                <!-- Add other headers -->
+                                                        </tr>
+                                                </thead>
+                                                <tbody>`;
+        applications.forEach((app) => {
+          tableHtml += `<tr>
+                                                <td>${app.firstName}</td>
+                                                <td>${app.lastName}</td>
+                                                <!-- Add other application data -->
+                                            </tr>`;
+        });
+        tableHtml += `</tbody></table>`;
+        applicationsTable.innerHTML = tableHtml; // Update the table HTML
+      }
+
+      document
+        .getElementById("submitForm")
+        .addEventListener("click", validateForm);
+      document.getElementById("viewTable").addEventListener("click", showTable);
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
